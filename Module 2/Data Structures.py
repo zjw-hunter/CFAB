@@ -18,7 +18,7 @@ print(myList)
 #Dictionaries
 myDict = {"one": 1, "two": 2, "three": 3}
 
-print(myDict)
+print("My dictionary can be printed as: ", myDict)
 
 print(myDict["one"])
 print(myDict.get("two"))
