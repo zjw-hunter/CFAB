@@ -17,13 +17,15 @@ class usefulObject():
 
 uO = usefulObject()
 
-u0.printString("Hello World!")
+uO.printString("Hello World!")
 
 class pet():
 
     def __init__(self, name):
         self.name = name
+    def __str__(self):
+        return(self.name)
 
 myDog = pet("Spot")
 
-print("My dog's name is : ", myDog.name)
+print("My dog's name is : ", myDog)
