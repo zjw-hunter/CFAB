@@ -2,6 +2,7 @@ import datetime #https://docs.python.org/3/library/datetime.html#module-datetime
 import math #https://docs.python.org/3/library/math.html#module-math
 import statistics #https://docs.python.org/3/library/statistics.html#module-statistics
 import random
+import myLibrary
 
 print(datetime.date.today())
 
@@ -44,11 +45,6 @@ print("Variance: ", statistics.variance(myData))
 print("Standard Deviation: ", statistics.stdev(myData))
 
 
+print("\nCustom modules (ones that you make) are also available")
 
-
-
-
-
-
-
-
+myLibrary.performOperation(" It also takes arguments")
