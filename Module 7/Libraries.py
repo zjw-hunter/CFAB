@@ -19,7 +19,9 @@ print( "10! = ", math.factorial(10))
 
 print( "The greatest common divisor of 99 and 121 is" , math.gcd(99, 121))
 
-print( "You can also do Logs for example:  Log(e) = ", math.log(math.e) ,"\nYou can also do base 2 or 10 easily: log10(0.0001) = ", math.log10(0.0001))
+print( "You can also do Logs for example:  Log(e) = ", math.log(math.e) ,
+       "\nYou can also do base 2 or 10 easily: log10(0.0001) = ", math.log10(0.0001)
+       , " log2(2048) = ", math.log2(2048))
 
 print("You can also do trig functions: sin, cos, tan, asin, acos, atan, conversion to/from radians/degrees",
         "\n as well as other simple functions like vector length")
@@ -38,7 +40,7 @@ myData =[]
 for i in range(100):
     myData.append(random.randint(0, 10)) #Random, this is sometimes useful 
     
-print("Here is a pseudorandom list of numbers 1 - 10\n", myData)
+print("Here is a list of random numbers 1 - 10\n", myData)
 print("Average: ", statistics.mean(myData))
 print("Median: ", statistics.median(myData))
 print("Variance: ", statistics.variance(myData))
@@ -48,3 +50,7 @@ print("Standard Deviation: ", statistics.stdev(myData))
 print("\nCustom modules (ones that you make) are also available")
 
 myLibrary.performOperation(" It also takes arguments")
+
+classFromMyLibrary = myLibrary.myClass()
+
+classFromMyLibrary.classOperation()
