@@ -10,7 +10,7 @@ myList.reverse() # Reverses the order of the list
 print(myList)
 myList.pop() # Removes the last element of the list
 print(myList)
-del myList[0] # Removes the element at a certain index
+myList.pop(0) # Removes the element at a certain index
 print(myList)
 myList.sort() # Default sorting method
 print(myList)
