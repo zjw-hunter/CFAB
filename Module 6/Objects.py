@@ -12,7 +12,7 @@ class usefulObject():
 
     def printString(self, myString):
         print("I'm printing a string: ")
-        print(myString)
+        print( myString )
 
 
 uO = usefulObject()
