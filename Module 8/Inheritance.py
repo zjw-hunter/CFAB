@@ -24,12 +24,18 @@ class cook(person):
         print("My favorite food is: ", self.favFood)
         
 class programmerCook(programmer, cook):
-    pass
+    
+    def __init__(self, name, favFood, favLang):
+       self.name = name
+       self.favFood = favFood
+       self.favLang = favLang
+
         
 if __name__ == "__main__":
     zach = cook('zach', 'meat')
     jo = programmer('jo', 'python')
     print(type(jo))
     print(type(zach))
-    #sue = programmerCook()
+    sue = programmerCook('sue', 'apples', 'java')
+    
     
